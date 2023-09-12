@@ -1,0 +1,38 @@
+.outer-div {
+    padding: 50px;
+}
+
+.header {
+    margin: auto;
+    padding: 10px;
+    color: white;
+}
+
+.user-table {
+    margin: auto;
+    padding: 10rem 20rem;
+}
+
+.btn-logout {
+    margin: 20px;
+    padding: 5px;
+    float: right;
+    background-color: rgb(206, 145, 33);
+    border-radius: 0.5rem;
+    color: white;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+    font-size: large;
+    font-weight: bold;
+    color: rgb(133, 7, 7);
+}
+
+.no-data {
+    margin: auto;
+    padding: 10rem;
+}

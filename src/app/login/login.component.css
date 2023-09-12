@@ -1,0 +1,21 @@
+.login-main {
+  margin-top: 10%;
+  /* width: 300px; */
+  height: auto;
+}
+mat-card {
+  min-width: 40%;
+  background-color: aliceblue;
+}
+
+.center {
+  margin: auto;
+  margin-top: 10%;
+  width: 30%;
+  padding: 10px;
+}
+
+.error-message {
+    border-radius: 0.5rem;
+    background-color: rgb(231, 82, 13);
+}

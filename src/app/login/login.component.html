@@ -1,0 +1,47 @@
+<div fxLayout="row" fxLayoutAlign="center center" class="login-main center">
+  <h3 class="error-message" *ngIf="message !== ''">{{ message }}</h3>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Sign In</mat-card-title>
+    </mat-card-header>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <mat-card-content fxLayout="row">
+        <div>
+          <mat-form-field>
+            <input matInput placeholder="Email" formControlName="email" />
+          </mat-form-field>
+          <mat-error
+            *ngIf="
+              loginForm.get('email')?.touched && loginForm.get('email')?.invalid
+            "
+            >Please enter a valid email address (Ex: example@example.com)</mat-error
+          >
+        </div>
+        <div>
+          <mat-form-field>
+            <input
+              type="password"
+              matInput
+              placeholder="password"
+              formControlName="password"
+            />
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+      <mat-card-actions align="end">
+        <button
+          mat-raised-button
+          color="primary"
+          type="submit"
+          [disabled]="checkEnable()"
+        >
+          Login
+        </button>
+      </mat-card-actions>
+    </form>
+  </mat-card>
+</div>
+<!-- <div class="parent">
+    <app-box-component  [color]="color"></app-box-component>
+    <div class="box" *ngFor="let color of colors" [ngStyle]="{'background': color}"></div>
+  </div> -->
